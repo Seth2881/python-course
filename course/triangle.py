@@ -1,0 +1,1 @@
+def quelTriangle():sides=[int(input("Entrer la longueur du côté : ")) for _ in range(3)] ; print('Votre triangle est équilatéral')if sides[0]==sides[1] and sides[2]==sides[0] else (print('Votre triangle est isocèle') if sides[0] == sides[1] or sides[0] == sides[2] or sides[1] == sides[2] else (print('Votre triangle est quelconque')));quelTriangle()
