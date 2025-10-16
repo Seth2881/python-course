@@ -1,0 +1,1 @@
+nbr = int(input("quelle table voulez-vous afficher ? : ")); print([f'{nbr*i}*'if nbr*i%3==0 else(nbr*i) for i in range(1,11)])
