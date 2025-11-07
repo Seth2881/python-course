@@ -1,7 +1,7 @@
 phone_number = input('entrez un numérode téléphone : ')
 temp=''
 for ele in phone_number :
-    if ele != ' ' :
+    if ele in '1234567890 ':
         temp+=ele
 phone_number=temp
 

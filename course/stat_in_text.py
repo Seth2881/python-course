@@ -1,18 +1,10 @@
-text = 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.'
+text = 'Two roads diverged in a yellow wood, And sorry I could not travel both And be one traveler, long I stoodAnd looked down one as far as I could To where it bent in the undergrowth.'.lower()
 
 def idk_how_to_name_it(strzone:str) :
-    letter_dict = {'a': 0, 'b': 0, 'c': 0,
-                   'd': 0, 'e': 0, 'f': 0,
-                   'g': 0, 'h': 0, 'i': 0,
-                   'j': 0, 'k': 0, 'l': 0,
-                   'm': 0, 'n': 0, 'o': 0, 
-                   'p': 0, 'q': 0, 'r': 0, 
-                   's': 0, 't': 0, 'u': 0,
-                   'v': 0, 'w': 0, 'x': 0, 
-                   'y': 0, 'z': 0}
+    letter_dict = {chr(i): 0 for i in range(ord('a'), ord('z') + 1)}
 
-    for ele in text :
-            letter_dict[ele.lower()] += 1
+    for key in letter_dict :
+        letter_dict[key] = strzone.count(key)
     
     return letter_dict
 
