@@ -22,9 +22,7 @@ def whoWin(bot,player,points) :
 score = [0,0]
 
 while not 2 in score :
-    choice_ia = bot()
-    choice_player = player()
-    score = whoWin(choice_ia,choice_player,score)
+    score = whoWin(bot(),player(),score)
     print('bot :',score[0],'player :',score[1])
 
 print('Great job ! You won !') if(score[1]==2)else(print('You loose to the AI'))
