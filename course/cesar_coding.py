@@ -64,17 +64,17 @@ def encode(prompt:str,nbr:int)->str:
 
     return return_str
 
-fichier = open('course/caesar_decoded_possibilities/decoded.txt','w')
+# fichier = open('course/caesar_decoded_possibilities/decoded.txt','w')
 
-prompt = "Attention Minecraft c'est cool, mais c'est chronophage. . ."
-crypted = encode(prompt,rand(1,26))
-decrypted = decode(crypted)
+# prompt = "Attention Minecraft c'est cool, mais c'est chronophage. . ."
+# crypted = encode(prompt,rand(1,26))
+# decrypted = decode(crypted)
 
-print('prompt :',prompt)
-print()
-print('encoded messages :',crypted)
-print()
-for elem in decrypted :
-    fichier.write(elem+'\n')
-fichier.close()
-print('Decrypted possibilities saved in course/caesar_decoded_possibilities/decoded.txt')
+# print('prompt :',prompt)
+# print()
+# print('encoded messages :',crypted)
+# print()
+# for elem in decrypted :
+#     fichier.write(elem+'\n')
+# fichier.close()
+# print('Decrypted possibilities saved in course/caesar_decoded_possibilities/decoded.txt')
