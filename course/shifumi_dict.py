@@ -1,8 +1,8 @@
-import random as tartiflette
+from random import choice as tartiflette
 
 def bot() :
-    temp  = tartiflette.choices(["rock","paper","scissors"],k=1)
-    return temp[0]
+    temp  = tartiflette(["rock","paper","scissors"])
+    return temp
 
 def player() :
     temp = input("'rock','paper' or 'scissors' ? (case sensitive) : ")
